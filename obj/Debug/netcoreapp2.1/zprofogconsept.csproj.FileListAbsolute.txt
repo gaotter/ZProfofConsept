@@ -1,0 +1,14 @@
+C:\MGMO\Angular\zProfOfConsept\zprofogconsept\bin\Debug\netcoreapp2.1\zprofogconsept.deps.json
+C:\MGMO\Angular\zProfOfConsept\zprofogconsept\bin\Debug\netcoreapp2.1\zprofogconsept.runtimeconfig.json
+C:\MGMO\Angular\zProfOfConsept\zprofogconsept\bin\Debug\netcoreapp2.1\zprofogconsept.runtimeconfig.dev.json
+C:\MGMO\Angular\zProfOfConsept\zprofogconsept\bin\Debug\netcoreapp2.1\zprofogconsept.dll
+C:\MGMO\Angular\zProfOfConsept\zprofogconsept\bin\Debug\netcoreapp2.1\zprofogconsept.pdb
+C:\MGMO\Angular\zProfOfConsept\zprofogconsept\obj\Debug\netcoreapp2.1\zprofogconsept.csprojAssemblyReference.cache
+C:\MGMO\Angular\zProfOfConsept\zprofogconsept\obj\Debug\netcoreapp2.1\zprofogconsept.csproj.CoreCompileInputs.cache
+C:\MGMO\Angular\zProfOfConsept\zprofogconsept\obj\Debug\netcoreapp2.1\zprofogconsept.RazorAssemblyInfo.cache
+C:\MGMO\Angular\zProfOfConsept\zprofogconsept\obj\Debug\netcoreapp2.1\zprofogconsept.RazorAssemblyInfo.cs
+C:\MGMO\Angular\zProfOfConsept\zprofogconsept\obj\Debug\netcoreapp2.1\zprofogconsept.AssemblyInfoInputs.cache
+C:\MGMO\Angular\zProfOfConsept\zprofogconsept\obj\Debug\netcoreapp2.1\zprofogconsept.AssemblyInfo.cs
+C:\MGMO\Angular\zProfOfConsept\zprofogconsept\obj\Debug\netcoreapp2.1\zprofogconsept.RazorTargetAssemblyInfo.cache
+C:\MGMO\Angular\zProfOfConsept\zprofogconsept\obj\Debug\netcoreapp2.1\zprofogconsept.dll
+C:\MGMO\Angular\zProfOfConsept\zprofogconsept\obj\Debug\netcoreapp2.1\zprofogconsept.pdb
