@@ -1,11 +1,6 @@
-<input type="text" class="z-search" name="zizrSearch" placeholder="Hva leter du etter? ">
 
-
-<<<<<<< HEAD
 <input type="text" class="z-search" name="zizrSearch" placeholder="Hva leter du etter? "><i class="fas fa-search z-search-icon"></i>
 
-=======
-{{model | json}}
 <div *ngIf="model">
   <div class="search-output" *ngFor="let s of model.sugestions">
 
@@ -13,7 +8,6 @@
     <div class="product-model"> {{s.model}}</div>
     <div class="product-brand"> {{s.brand}}</div>
   </div>
->>>>>>> 56db88aff6a44031fee0e4acfd662aa2716d18fe
 
   <div class="product-sizes"></div>
 </div>
