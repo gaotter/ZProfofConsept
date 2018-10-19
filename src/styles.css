@@ -27,7 +27,6 @@ img.z-logo {
 .z-content-wrapper {
     margin: 0px 50px 0 50px;
 }
-
 input.z-search {
     height: 50px;
     width: 550px;
@@ -38,6 +37,9 @@ input.z-search {
     border: 1px solid #26B5EA;
     padding-left: 30px;
     font-size: 24px;
+    position: absolute;
+    left: 670px;
+    top: 111px;
 }
 
 .z-search-icon {
@@ -51,8 +53,8 @@ input.z-search {
 .z-search-output-wrapper {
     background: #fff;
     padding: 30px;
-    width: 80%;
-    margin: auto;
+    width: 60%;
+    margin: 210px auto;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
