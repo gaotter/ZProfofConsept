@@ -19,3 +19,18 @@ img.z-logo {
     float: right;
     margin-right: 100px;
 }
+.z-content-wrapper {
+    margin: 0px 50px 0 50px;
+}
+
+input.z-search {
+    height: 50px;
+    width: 550px;
+    margin: 80px auto;
+    display: block;
+    border-radius: 28px;
+    border-style: none;
+    border: 1px solid #ddd;
+    padding-left: 30px;
+    font-size: 24px;
+}
