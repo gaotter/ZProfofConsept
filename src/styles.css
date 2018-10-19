@@ -63,3 +63,16 @@ input.z-search {
     height: 48px;
     margin-right: 10px;
 }
+
+.search-output {
+    padding-top: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.search-output:first-child {
+    padding-top: 0px;
+}
+.search-output:last-child {
+    border: none;
+}
