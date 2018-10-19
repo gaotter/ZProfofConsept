@@ -24,11 +24,33 @@ modelOb:Observable<AppModel>;
   setModel(model: AppModel): void {
      this.modelSubject.next(model);
   }
+
+  setSearch():void {
+    this.appModel.view = ViewMode.search;
+    this.updateModel();
+  }
+
+  setDetails(item:Item):void {
+    this.appModel.view = ViewMode.details;
+    this.appModel.selected = item;
+    this.updateModel();
+  }
+
+  setUpload():void {
+    this.appModel.view = ViewMode.upload;
+    this.updateModel();
+  }
+
+  updateModel():void {
+    this.modelSubject.next(this.appModel);
+  }
 }
 
 
 export class AppModel {
   searchInput = 'Joggesko';
+  view:ViewMode = ViewMode.search;
+  selected:Item;
   sugestions: Item[] = [
     new Item(),
     {
@@ -49,8 +71,16 @@ export class AppModel {
   ];
 }
 
+export enum ViewMode {
+  search,
+  details,
+  upload
+}
+
 export class Item {
-  imageUrl = "//mosaic03.ztat.net/vgs/media/packshot/pdp-zoom/AD/11/5O/03/YM/11/AD115O03Y-M11@12.jpg";
+
+  imageUrl = "https://cdn.shopify.com/s/files/1/1040/1138/products/sko-med-rulle-hjul-og-led-lys-fra-ledtrend14_9b7deaba-f5a6-441a-846e-edd619037494_large.jpg?v=1527191231";
+
   model = "Hvite LED sko";
   brand = "Nike"
 
