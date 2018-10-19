@@ -1,0 +1,16 @@
+Hvordan kan Zizr eksistere som en standalone applikasjon?
+-	Mobil App (Xamarin)?
+-	Responsiv WEB-app
+-	Ekstern login (oAuth - google osv.)
+
+Hvordan blir dette seende ut? / Hva slags funksjonalitet er nødvendig for å lage en slik applikasjon?
+-	Bruker kan registrere seg via oAuth og FB eller Google el. Etter registrering blir bedt om å legge inn en eller flere sko med størrelse brukeren er fornøyd med, men systemet kan brukes uten registrering / innlogging men da med redusert nøyaktighet ift. Anbefalinger.  
+-	Enkel søkeside for sko / plagg, hvor bruker kan skrive inn type sko / merke / modell og få opp forslag basert på dette, samt anbefalt skostørrelse eller andre brukeres erfaringer med samme sko. 
+-	Lett å opprette profil, vi krever ikke at brukere legger inn sko-info men oppfordrer brukeren til å legge inn sko/størrelse brukeren har og er fornøyd med for å få bedre søkeresultater og anbefalinger fra systemet. 
+-	Detaljside inneholder detaljer om sko, forslag til lignende sko, link til hvor den kan kjøps / produsent sin hjemmeside hvis dette er tilgjengelig. 
+-	Bruker kan legge igjen omtale og informasjon om hvor godt skoen passer, om den er stor eller liten ift. andre sko i samme størrelse. 
+-	Systemet anbefaler sko-størrelse hvis bruker har lastet opp info om sko. Hvis ikke får brukeren info om at skoen er større eller mindre enn vanlig basert på andre brukeres erfaringer med samme sko. 
+
+Hvilke teknologier er nødvendige for å utvikle en slik løsning?
+-	Nativ app eller rammeverk som Xamarin / Flutter / React native. 
+-	Web app basert på Angular / React.
