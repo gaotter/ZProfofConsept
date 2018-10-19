@@ -11,8 +11,12 @@ export class SearchComponent implements OnInit {
   @Input()
   model:AppModel;
 
+
   @Output()
   seDetails:EventEmitter<AppModel>  = new EventEmitter<AppModel>();
+
+  public showResultContent: boolean = false;
+
 
   onItemClick(i:Item) {
     this.model.selected = i;
@@ -47,6 +51,14 @@ showUpload():void {
   constructor() { }
 
   ngOnInit() {
+    console.log(this.showResultContent);
   }
 
+  showResult(){
+    this.showResultContent = true;
+  }
+  
+  hideResult(){
+    this.showResultContent = false;
+  }
 }

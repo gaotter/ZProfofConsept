@@ -7,7 +7,7 @@ body {
     font-size: 18px;
 }
 
-textarea:focus, input:focus{
+button:focus, textarea:focus, input:focus{
     outline: none;
 }
 
@@ -46,4 +46,51 @@ input.z-search {
     left: 1203px;
     font-size: 32px;
     opacity: 0.5;
+}
+
+.z-search-output-wrapper {
+    background: #fff;
+    padding: 30px;
+    width: 80%;
+    margin: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.product-img img{
+    float: left;
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+}
+
+.search-output {
+    padding-top: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.search-output:first-child {
+    padding-top: 0px;
+}
+.search-output:last-child {
+    border: none;
+}
+
+.z-search-btn {
+    position: absolute;
+    top: 192px;
+    left: 1146px;
+    padding: 8px;
+    font-size: 30px;
+    border: none;
+    background: none;
+    border-radius: 130px;
+    color: #26B5EA;
+    border: 1px solid transparent;
+}
+.z-search-btn:hover {
+    border: 1px solid #26B5EA;
+    background-color: #26B5EA;
+    color: #FFF;
 }
