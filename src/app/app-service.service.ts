@@ -29,5 +29,16 @@ modelOb:Observable<AppModel>;
 
 export class AppModel {
   searchInput = 'Joggesko';
-  sudjestions: string[] = [];
+  sugestions: Item[] = [
+    new Item(),
+
+  ];
 }
+
+export class Item {
+  imageUrl = "";
+  model = "Hvite LED sko";
+  brand = "Nike"
+
+}
+
