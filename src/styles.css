@@ -7,7 +7,7 @@ body {
     font-size: 18px;
 }
 
-textarea:focus, input:focus{
+button:focus, textarea:focus, input:focus{
     outline: none;
 }
 
@@ -75,4 +75,22 @@ input.z-search {
 }
 .search-output:last-child {
     border: none;
+}
+
+.z-search-btn {
+    position: absolute;
+    top: 192px;
+    left: 1146px;
+    padding: 8px;
+    font-size: 30px;
+    border: none;
+    background: none;
+    border-radius: 130px;
+    color: #26B5EA;
+    border: 1px solid transparent;
+}
+.z-search-btn:hover {
+    border: 1px solid #26B5EA;
+    background-color: #26B5EA;
+    color: #FFF;
 }
