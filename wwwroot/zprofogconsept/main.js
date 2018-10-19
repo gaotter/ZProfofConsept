@@ -74,6 +74,21 @@ var AppModel = /** @class */ (function () {
         this.searchInput = 'Joggesko';
         this.sugestions = [
             new Item(),
+            {
+                brand: "Nike",
+                model: "Cold runner",
+                imageUrl: "https://cdn.shopify.com/s/files/1/1040/1138/products/rosa-ledsko-fra-ledtrend0797_5b967f40-b2e1-48cb-9dda-7021c3127970_1024x1024.jpg?v=1533041356"
+            },
+            {
+                brand: "Nike",
+                model: "High runner",
+                imageUrl: "https://www.highheels-no.com/damesko/hoeyhaeler/popup_images/svart-12-5-cm-STOMP-08-lolita-sko-gothic-wedge-platasko-med-kilehaeler-8785_0.jpg"
+            },
+            {
+                brand: "Nike",
+                model: "Cool runner",
+                imageUrl: "https://dms-cf-03.dimu.org/image/032yizVJSdkj?dimension=1200x1200"
+            },
         ];
     }
     return AppModel;
@@ -81,7 +96,7 @@ var AppModel = /** @class */ (function () {
 
 var Item = /** @class */ (function () {
     function Item() {
-        this.imageUrl = "/img/hvite-LED-sko-3-forsidebilde_grande.jpg";
+        this.imageUrl = "wwwroot/img/hvite-LED-sko-3-forsidebilde_grande.jpg";
         this.model = "Hvite LED sko";
         this.brand = "Nike";
     }
@@ -297,7 +312,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n\r\n<input type=\"text\" class=\"z-search\" name=\"zizrSearch\" placeholder=\"Hva leter du etter? \">\r\n\r\n<p *ngIf=\"model\">\r\n  {{model | json}}\r\n  <img [src]=\"model.sugestions[0].imageUrl\" />\r\n</p>\r\n"
+module.exports = "<input type=\"text\" class=\"z-search\" name=\"zizrSearch\" placeholder=\"Hva leter du etter? \">\r\n\r\n<div *ngIf=\"model\">\r\n  <div class=\"search-output\" *ngFor=\"let s of model.sugestions\">\r\n\r\n    <div class=\"product-img\"><img [src]=\"s.imageUrl\" /></div>\r\n    <div class=\"product-model\"> {{s.model}}</div>\r\n    <div class=\"product-brand\"> {{s.brand}}</div>\r\n  </div>\r\n\r\n  <div class=\"product-sizes\"></div>\r\n</div>\r\n"
 
 /***/ }),
 
