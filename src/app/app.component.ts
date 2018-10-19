@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AppServiceService, AppModel } from './app-service.service';
+import { AppServiceService, AppModel, Item } from './app-service.service';
 
 @Component({
   selector: 'app-root',
@@ -15,5 +15,12 @@ export class AppComponent implements OnInit {
     this.appServiceService.modelOb.subscribe(s => this.model = s);
   }
 
-  title = 'app';
+  seDetails(item:Item) {
+    this.appServiceService.setDetails(item);
+  }
+  seSearch() {
+    console.log("se searhc");
+    this.appServiceService.setSearch();
+  }
+  
 }

@@ -1,4 +1,7 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<app-search [model]="model"></app-search>
+{{model.view | json}}
+<app-search *ngIf="model.view === 0" [model]="model" (seDetails)="seDetails($event)"></app-search>
+<app-upload *ngIf="model.view === 2" [model]="model" (seSearch)="seSearch()"></app-upload>
+<app-details *ngIf="model.view === 1" [model]="model" (seSearch)="seSearch()"></app-details>
 
 
