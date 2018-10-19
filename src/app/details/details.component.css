@@ -1,0 +1,22 @@
+.details-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+img {
+    height: 300px;
+    width: auto;
+    padding: 10px 10px 10px 0px;
+    
+}
+
+.text {
+    width: 100px;
+}

@@ -1,15 +1,22 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { AppModel } from '../app-service.service';
+import { Component, OnInit, Input, Output, EventEmitter, OnChanges, SimpleChanges } from '@angular/core';
+import { AppModel, Item } from '../app-service.service';
 
 @Component({
   selector: 'app-details',
   templateUrl: './details.component.html',
   styleUrls: ['./details.component.css']
 })
-export class DetailsComponent implements OnInit {
+export class DetailsComponent implements OnInit, OnChanges {
+  ngOnChanges(changes:SimpleChanges): void {
+    console.log("chages", changes);
+    this.currentItem = changes.model.currentValue;
+  }
 
   @Input()
   model:AppModel;
+
+  currentItem:Item;
+  
 
   
   @Output()
@@ -18,6 +25,8 @@ export class DetailsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.currentItem = this.model.selected;
+  
   }
 
 

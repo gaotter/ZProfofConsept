@@ -1,5 +1,8 @@
 
-<div (click)="goToSearch()">Back</div>
-<p>
-  details works!
-</p>
+
+<div class="details-wrapper">
+  <div class="item"><div class="text">brand: </div><div>{{currentItem.brand}}</div></div>
+  <div class="item"><div class="text">model: </div><div>{{currentItem.model}}</div></div>
+  <div class="item"><img [src]="currentItem.imageUrl" /></div>
+  <div (click)="goToSearch()">Back</div>
+</div>
