@@ -188,7 +188,6 @@ var AppComponent = /** @class */ (function () {
         this.appServiceService.setDetails(item);
     };
     AppComponent.prototype.seSearch = function () {
-        console.log("se searhc");
         this.appServiceService.setSearch();
     };
     AppComponent = __decorate([
@@ -268,7 +267,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = ".details-wrapper {\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-content: flex-start;\r\n}\r\n\r\n.item {\r\n    display: flex;\r\n    flex-direction: row;\r\n    justify-content: flex-start;\r\n}\r\n\r\nimg {\r\n    height: 300px;\r\n    width: auto;\r\n    padding: 10px 10px 10px 0px;\r\n    \r\n}\r\n\r\n.text {\r\n    width: 100px;\r\n}"
 
 /***/ }),
 
@@ -279,7 +278,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<div (click)=\"goToSearch()\">Back</div>\r\n<p>\r\n  details works!\r\n</p>\r\n"
+module.exports = "<div class=\"z-btn-back-wrapper\">\r\n  <div class=\"z-btn-back\" (click)=\"goToSearch()\">Back to search</div>\r\n</div>\r\n\r\n<div class=\"z-content-detail-wrapper\">\r\n  <!-- ADD YOUR CONTENT HERE -->\r\n  <div class=\"item\">\r\n    <div class=\"text\">brand: </div>\r\n    <div>{{currentItem.brand}}</div>\r\n  </div>\r\n  <div class=\"item\">\r\n    <div class=\"text\">model: </div>\r\n    <div>{{currentItem.model}}</div>\r\n  </div>\r\n  <div class=\"item\"><img [src]=\"currentItem.imageUrl\" /></div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -310,7 +309,12 @@ var DetailsComponent = /** @class */ (function () {
     function DetailsComponent() {
         this.seSearch = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
     }
+    DetailsComponent.prototype.ngOnChanges = function (changes) {
+        console.log("chages", changes);
+        this.currentItem = changes.model.currentValue;
+    };
     DetailsComponent.prototype.ngOnInit = function () {
+        this.currentItem = this.model.selected;
     };
     DetailsComponent.prototype.goToSearch = function () {
         console.log("se search");
@@ -357,7 +361,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n\r\n<input type=\"text\" class=\"z-search\" name=\"zizrSearch\" placeholder=\"Hva leter du etter? \" (keyup)=\"hideResult($event)\">\r\n<button class=\"z-search-btn\" type=\"button\" (click)=\"showResult()\">\r\n  Go!  <i class=\"fas fa-arrow-circle-right\"></i>\r\n</button>\r\n\r\n<div class=\"z-search-output-wrapper\" *ngIf=\"showResultContent\">\r\n  <div class=\"search-output\"  (click)=\"onItemClick(s)\"  *ngFor=\"let s of model.sugestions\">\r\n  \r\n    <div class=\"product-img\"><img [src]=\"s.imageUrl\" /></div>\r\n    <div class=\"product-brand\"> {{s.brand}}</div>\r\n    <div class=\"product-model\"> {{s.model}}</div>\r\n  </div>\r\n\r\n  <div class=\"product-sizes\"></div>\r\n</div>\r\n"
+module.exports = "\r\n<div class=\"z-search-wrapper\">\r\n<input type=\"text\" class=\"z-search\" name=\"zizrSearch\" placeholder=\"Hva leter du etter? \" (keyup)=\"hideResult($event)\">\r\n<button class=\"z-search-btn\" type=\"button\" (click)=\"showResult()\">\r\n  Go!  <i class=\"fas fa-arrow-circle-right\"></i>\r\n</button>\r\n</div>\r\n<div class=\"z-search-output-wrapper\" *ngIf=\"showResultContent\">\r\n  <div class=\"search-output\"  (click)=\"onItemClick(s)\"  *ngFor=\"let s of model.sugestions\">\r\n  \r\n    <div class=\"product-img\"><img [src]=\"s.imageUrl\" /></div>\r\n    <div class=\"product-brand\"> {{s.brand}}</div>\r\n    <div class=\"product-model\"> {{s.model}}</div>\r\n  </div>\r\n\r\n  <div class=\"product-sizes\"></div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -394,7 +398,7 @@ var SearchComponent = /** @class */ (function () {
     }
     SearchComponent.prototype.onItemClick = function (i) {
         this.model.selected = i;
-        this.seDetails.next(this.model);
+        this.seDetails.next(i);
     };
     SearchComponent.prototype.showSearch = function () {
         this.searchdetails = false;
@@ -412,7 +416,6 @@ var SearchComponent = /** @class */ (function () {
         this.searchview = false;
     };
     SearchComponent.prototype.ngOnInit = function () {
-        console.log(this.showResultContent);
     };
     SearchComponent.prototype.showResult = function () {
         this.showResultContent = true;

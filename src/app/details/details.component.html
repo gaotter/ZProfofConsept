@@ -1,8 +1,16 @@
+<div class="z-btn-back-wrapper">
+  <div class="z-btn-back" (click)="goToSearch()">Back to search</div>
+</div>
 
-
-<div class="details-wrapper">
-  <div class="item"><div class="text">brand: </div><div>{{currentItem.brand}}</div></div>
-  <div class="item"><div class="text">model: </div><div>{{currentItem.model}}</div></div>
+<div class="z-content-detail-wrapper">
+  <!-- ADD YOUR CONTENT HERE -->
+  <div class="item">
+    <div class="text">brand: </div>
+    <div>{{currentItem.brand}}</div>
+  </div>
+  <div class="item">
+    <div class="text">model: </div>
+    <div>{{currentItem.model}}</div>
+  </div>
   <div class="item"><img [src]="currentItem.imageUrl" /></div>
-  <div (click)="goToSearch()">Back</div>
 </div>

@@ -27,21 +27,17 @@ img.z-logo {
 .z-content-wrapper {
     margin: 0px 50px 0 50px;
 }
-input.z-search {
+.z-search {
     height: 50px;
-    width: 550px;
-    margin: 80px auto;
+    width: 530px;
     display: block;
-    border-radius: 28px;
+    border-radius: 28px 0px 0px 28px;
     border-style: none;
     border: 1px solid #26B5EA;
     padding-left: 30px;
     font-size: 24px;
-    position: absolute;
-    left: 670px;
-    top: 111px;
+    float: left;
 }
-
 .z-search-icon {
     position: absolute;
     top: 200px;
@@ -54,7 +50,7 @@ input.z-search {
     background: #fff;
     padding: 30px;
     width: 60%;
-    margin: 210px auto;
+    margin: auto;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
@@ -64,6 +60,11 @@ input.z-search {
     width: 48px;
     height: 48px;
     margin-right: 10px;
+}
+
+.z-search-wrapper {
+    width: 740px;
+    margin: 120px auto;
 }
 
 .search-output {
@@ -80,19 +81,31 @@ input.z-search {
 }
 
 .z-search-btn {
-    position: absolute;
-    top: 192px;
-    left: 1146px;
-    padding: 8px;
+    padding: 9px;
     font-size: 30px;
-    border: none;
-    background: none;
+    background: #fff;
     border-radius: 130px;
     color: #26B5EA;
-    border: 1px solid transparent;
+    border: 1px solid #26b5ea;
+    border-radius: 0px 28px 28px 0px;
 }
 .z-search-btn:hover {
     border: 1px solid #26B5EA;
     background-color: #26B5EA;
     color: #FFF;
+}
+
+.z-content-detail-wrapper {
+    width: 60%;
+    background-color: #FFF;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    margin: auto;
+    padding: 30px;
+    min-height: 250px;
+}
+
+.z-btn-back-wrapper {
+    margin: 300px auto 0px;
+    width: 60%;
 }
