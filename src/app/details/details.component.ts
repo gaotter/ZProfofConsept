@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { AppModel } from '../app-service.service';
 
 @Component({
   selector: 'app-details',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailsComponent implements OnInit {
 
+  @Input()
+  model:AppModel;
+
+  
+  @Output()
+  seSearch:EventEmitter<void>  = new EventEmitter<void>();
+
   constructor() { }
 
   ngOnInit() {
   }
 
+
+  goToSearch() {
+    console.log("se search");
+this.seSearch.next();
+  }
 }
