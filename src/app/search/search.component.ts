@@ -13,14 +13,14 @@ export class SearchComponent implements OnInit {
 
 
   @Output()
-  seDetails:EventEmitter<AppModel>  = new EventEmitter<AppModel>();
+  seDetails:EventEmitter<Item>  = new EventEmitter<Item>();
 
   public showResultContent: boolean = false;
 
 
   onItemClick(i:Item) {
     this.model.selected = i;
-    this.seDetails.next(this.model);
+    this.seDetails.next(i);
   }
 
 searchview:boolean = true;
