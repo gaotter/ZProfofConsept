@@ -34,23 +34,23 @@ export class AppModel {
     {
       brand:"Nike",
       model:"Cold runner",
-      imageUrl:"https://cdn.shopify.com/s/files/1/1040/1138/products/rosa-ledsko-fra-ledtrend0797_5b967f40-b2e1-48cb-9dda-7021c3127970_1024x1024.jpg?v=1533041356"
+      imageUrl:"//cdn.shopify.com/s/files/1/1040/1138/products/rosa-ledsko-fra-ledtrend0797_5b967f40-b2e1-48cb-9dda-7021c3127970_1024x1024.jpg?v=1533041356"
     },
     {
       brand:"Nike",
       model:"High runner",
-      imageUrl:"https://www.highheels-no.com/damesko/hoeyhaeler/popup_images/svart-12-5-cm-STOMP-08-lolita-sko-gothic-wedge-platasko-med-kilehaeler-8785_0.jpg"
+      imageUrl:"//www.highheels-no.com/damesko/hoeyhaeler/popup_images/svart-12-5-cm-STOMP-08-lolita-sko-gothic-wedge-platasko-med-kilehaeler-8785_0.jpg"
     },
     {
       brand:"Nike",
       model:"Cool runner",
-      imageUrl:"https://dms-cf-03.dimu.org/image/032yizVJSdkj?dimension=1200x1200"
+      imageUrl:"//dms-cf-03.dimu.org/image/032yizVJSdkj?dimension=1200x1200"
     },
   ];
 }
 
 export class Item {
-  imageUrl = "wwwroot/img/hvite-LED-sko-3-forsidebilde_grande.jpg";
+  imageUrl = "//mosaic03.ztat.net/vgs/media/packshot/pdp-zoom/AD/11/5O/03/YM/11/AD115O03Y-M11@12.jpg";
   model = "Hvite LED sko";
   brand = "Nike"
 
