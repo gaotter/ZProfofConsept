@@ -7,6 +7,10 @@ body {
     font-size: 18px;
 }
 
+textarea:focus, input:focus{
+    outline: none;
+}
+
 .z-head-wrapper {
     background-color: #fff;
     padding: 30px;
@@ -17,6 +21,7 @@ img.z-logo {
 }
 .z-login-signup-menu {
     float: right;
+    color: #26B5EA;
     margin-right: 100px;
 }
 .z-content-wrapper {
@@ -30,7 +35,15 @@ input.z-search {
     display: block;
     border-radius: 28px;
     border-style: none;
-    border: 1px solid #ddd;
+    border: 1px solid #26B5EA;
     padding-left: 30px;
     font-size: 24px;
+}
+
+.z-search-icon {
+    position: absolute;
+    top: 200px;
+    left: 1203px;
+    font-size: 32px;
+    opacity: 0.5;
 }

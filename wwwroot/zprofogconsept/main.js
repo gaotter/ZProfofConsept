@@ -125,7 +125,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<!--The content below is only a placeholder and can be replaced.-->\r\n<app-search [model]=\"model\"></app-search>\r\n\r\n\r\n"
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n<app-search [model]=\"model\"></app-search>\r\n\r\n\r\n"
 
 /***/ }),
 
@@ -312,7 +312,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<input type=\"text\" class=\"z-search\" name=\"zizrSearch\" placeholder=\"Hva leter du etter? \">\r\n\r\n<div *ngIf=\"model\">\r\n  <div class=\"search-output\" *ngFor=\"let s of model.sugestions\">\r\n\r\n    <div class=\"product-img\"><img [src]=\"s.imageUrl\" /></div>\r\n    <div class=\"product-model\"> {{s.model}}</div>\r\n    <div class=\"product-brand\"> {{s.brand}}</div>\r\n  </div>\r\n\r\n  <div class=\"product-sizes\"></div>\r\n</div>\r\n"
+module.exports = "\r\n<input type=\"text\" class=\"z-search\" name=\"zizrSearch\" placeholder=\"Hva leter du etter? \"><i class=\"fas fa-search z-search-icon\"></i>\r\n\r\n\r\n<div *ngIf=\"model\">\r\n  <div class=\"search-output\" *ngFor=\"let s of model.sugestions\">\r\n\r\n    <div class=\"product-img\"><img [src]=\"s.imageUrl\" /></div>\r\n    <div class=\"product-model\"> {{s.model}}</div>\r\n    <div class=\"product-brand\"> {{s.brand}}</div>\r\n  </div>\r\n\r\n  <div class=\"product-sizes\"></div>\r\n</div>\r\n"
 
 /***/ }),
 
