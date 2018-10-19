@@ -72,10 +72,11 @@ img.z-logo {
     border-bottom: 1px solid #ddd;
     padding-bottom: 20px;
 }
-
-.search-output:first-child {
-    padding-top: 0px;
+.search-output:hover {
+    cursor: pointer;
+    background: #fafafa;
 }
+
 .search-output:last-child {
     border: none;
 }
@@ -106,6 +107,24 @@ img.z-logo {
 }
 
 .z-btn-back-wrapper {
-    margin: 300px auto 0px;
+    margin: 150px auto 0px;
     width: 60%;
+}
+
+.z-btn-back {
+    padding: 15px;
+    margin-left: -30px;
+    width: 170px;
+    border-radius: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+    border: 1px solid #26B5EA;
+    color: #26B5EA;
+    background: #fff;
+    cursor: pointer;
+}
+.z-btn-back:hover { 
+    border: 1px solid #fff;
+    color: #fff;
+    background: #26B5EA;
 }
