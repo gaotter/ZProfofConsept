@@ -36,7 +36,7 @@ export class AppModel {
 }
 
 export class Item {
-  imageUrl = "";
+  imageUrl = "/img/hvite-LED-sko-3-forsidebilde_grande.jpg";
   model = "Hvite LED sko";
   brand = "Nike"
 

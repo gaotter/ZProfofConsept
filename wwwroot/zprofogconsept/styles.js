@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/* You can add global styles to this file, and also import other style files */\n"
+module.exports = "/* You can add global styles to this file, and also import other style files */\r\n\r\nbody {\r\n    background-color: #f0f0f0;\r\n    margin: 0px;\r\n    font-family: 'Roboto', sans-serif !important;\r\n    font-size: 18px;\r\n}\r\n\r\n.z-head-wrapper {\r\n    background-color: #fff;\r\n    padding: 30px;\r\n    box-shadow: 0px -1px 8px #aaa;\r\n}\r\n\r\nimg.z-logo {\r\n    margin-left: 70px;\r\n}\r\n\r\n.z-login-signup-menu {\r\n    float: right;\r\n    margin-right: 100px;\r\n}\r\n\r\n.z-content-wrapper {\r\n    margin: 0px 50px 0 50px;\r\n}\r\n\r\ninput.z-search {\r\n    height: 50px;\r\n    width: 550px;\r\n    margin: 80px auto;\r\n    display: block;\r\n    border-radius: 28px;\r\n    border-style: none;\r\n    border: 1px solid #ddd;\r\n    padding-left: 30px;\r\n    font-size: 24px;\r\n}"
 
 /***/ }),
 
@@ -539,7 +539,7 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\MGMO\Angular\zProfOfConsept\zprofogconsept\src\styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! D:\Projects\btur\ZProfofConsept\src\styles.css */"./src/styles.css");
 
 
 /***/ })
