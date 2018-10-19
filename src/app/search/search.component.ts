@@ -51,7 +51,6 @@ showUpload():void {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.showResultContent);
   }
 
   showResult(){

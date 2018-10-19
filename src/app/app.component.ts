@@ -19,7 +19,6 @@ export class AppComponent implements OnInit {
     this.appServiceService.setDetails(item);
   }
   seSearch() {
-    console.log("se searhc");
     this.appServiceService.setSearch();
   }
   
